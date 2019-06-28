@@ -29,7 +29,8 @@ module.exports = function (grunt) {
                     ]
                 },
                 files:{
-                    'public/build/css/main.css': ['src-assets/css/main.styl']
+                    'public/build/css/main.css': ['src-assets/css/main.styl'],
+                    'public/build/css/modale.css': ['src-assets/css/modale.styl']
                 }
             }
         },
