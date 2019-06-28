@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\IB\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\IB\AppData\Local\Microsoft\WindowsApps;C:\Users\IB\AppData\Roaming\npm;C:\Users\IB\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@type%2fbootstrap: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65200:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129590:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130562:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130484:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "02_MOVIES",
+    "version": "1.0.0",
+    "dependencies": {
+      "lite-server": "2.2.2",
+      "babel-plugin-transform-runtime": "6.12.0",
+      "babel-preset-es2015": "6.13.2",
+      "babel-preset-stage-3": "6.11.0",
+      "babel-runtime": "6.9.2",
+      "babelify": "7.3.0",
+      "grunt": "^1.0.4",
+      "grunt-browserify": "5.2.0",
+      "grunt-contrib-stylus": "^1.2.0",
+      "grunt-contrib-watch": "^1.1.0",
+      "requirejs": "2.3.2",
+      "rupture": "latest",
+      "typescript": "^3.5.2",
+      "tsify": "^4.0.1",
+      "@types/jquery": "^3.3.30",
+      "bootstrap": "3.4.1",
+      "@type/bootstrap": "3.3.33",
+      "redux": "4.0.1"
+    },
+  
+    "scripts": {
+      "server-run": "lite-server"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
