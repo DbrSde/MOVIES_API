@@ -32,7 +32,7 @@ function getMovies(): void {
             }
             for(let movie of movies){
                 $movies +=
-                    `<li class="movie-item">
+                    `<li class="movie-item col-lg-3">
                         <div class="movie-container">
                             <a class="movie-visual-link" href="#"
                                                         title="Voir l'affiche du film : ${movie.title}"
@@ -43,7 +43,6 @@ function getMovies(): void {
                             </a>
                             <div class="movie-infos">
                                 <h2 class="movie-title">${movie.title}</h2>
-                                <div class="movie-description">${movie.description}</div>
                             </div>
                         </div>
                      </li>   

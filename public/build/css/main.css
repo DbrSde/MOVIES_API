@@ -1,0 +1,36 @@
+ul#movies-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul#movies-list li {
+  margin: 3% 0;
+}
+ul#movies-list li img {
+  width: 100%;
+  opacity: 1;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+ul#movies-list li img:hover {
+  transform: scale(1.4);
+  z-index: 2;
+}
+h1 {
+  font-family: Heebo, sans-serif;
+  font-size: 4em;
+  line-height: 4em;
+  color: #1c2129;
+}
+h2 {
+  font-family: Heebo, sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #1c2129;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
