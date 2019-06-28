@@ -3,8 +3,10 @@ import Configuration from "./Configuration";
 
 const LOG_PREFIX: string = 'main | ';
 let $movies: string = "";
+let movies: Array<Movie>;
 
 interface Movie {
+    id: number,
     cover_big: string,
     cover_small: string,
     title: string,
@@ -16,7 +18,7 @@ $( () => {
 });
 
 /**
- * Method permettant de récupérer la liste des films
+ * Methode permettant de récupérer la liste des films
  */
 function getMovies(): void {
     Console.debug("%s getMovies", LOG_PREFIX);
@@ -26,7 +28,7 @@ function getMovies(): void {
        dataType: 'jsonp',
        success: (data) =>{
            Console.info("MOVIES", data);
-            let movies: Array<Movie> = data.content.movies;
+            movies = data.content.movies;
             if (!movies || !movies.length) {
                 return;
             }
@@ -38,6 +40,7 @@ function getMovies(): void {
                                                         title="Voir l'affiche du film : ${movie.title}"
                                                         target="_blank"
                                                         data-toggle="modal"
+                                                        data-id="${movie.id}"
                                                         data-target="#myModal">
                                 <img class="movie-visual" src="${movie.cover_small}" alt="Poster du film ${movie.title}"/>                            
                             </a>
@@ -49,9 +52,19 @@ function getMovies(): void {
                     `;
             }
             $('#movies-list').html($movies);
+            initModal();
+
        },
         error: (error) => {
            console.log(error);
         }
     });
 }
+
+
+function initModal(): void {
+    $(document).on  ("click", "movie-visual-link", function (event) {
+        console.log("coucouououo");
+    });
+}
+

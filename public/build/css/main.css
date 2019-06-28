@@ -19,6 +19,12 @@ ul#movies-list li img:hover {
   transform: scale(1.1);
   z-index: 2;
 }
+ul#movies-list li a {
+  width: 100%;
+}
+ul#movies-list li a:after {
+  content: "";
+}
 h1 {
   font-family: Heebo, sans-serif;
   font-size: 4em;
