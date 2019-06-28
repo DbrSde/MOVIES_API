@@ -1,0 +1,22 @@
+export default class Configuration {
+
+    public static MOVIES_API_URL:string = "http://moviesdb.brm.us/api/movies";
+
+    public static CONSOLE_STYLE: string = 'color: green; font-weight: bold;';
+    public static CONSOLE_DEBUG_STYLE: string = 'color: grey;';
+    public static IS_DEBUG_MODE: boolean = true;
+    public static IS_DEBUG_AXIOS_MODE: boolean = true;
+
+    public static ICON_ERROR: string = "fa-bullhorn";
+    public static ICON_WARNING: string = "fa-exclamation-triangle";
+    public static ICON_INFO: string = "fa-commenting-o";
+    public static ICON_SUCCESS: string = "fa-check";
+
+    public static MESSAGE_TYPE_ERROR: string = "error";
+    public static MESSAGE_TYPE_SUCCESS: string = "success";
+    public static MESSAGE_TYPE_WARNING: string = "warning";
+    public static MESSAGE_TYPE_INFO: string = "info";
+
+    public static EVENT_MOVIE_SELECTED: string = "movieSelected";
+
+}

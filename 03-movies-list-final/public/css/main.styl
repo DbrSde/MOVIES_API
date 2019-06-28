@@ -1,0 +1,95 @@
+@import "nib"
+
+/* ==========================================================================
+  GLOBAL
+========================================================================== */
+
+global-reset()
+typographic()
+
+*
+  box-sizing border-box
+
+html, body
+  width 100%
+  height 100%
+
+body
+  background #fff
+  font-family $body-font
+  color $body-color
+  font-size 100%
+  font-smoothing: antialiased
+  overflow-x hidden
+  line-height $line-height-ratio
+  word-wrap break-word
+
+body > .video
+  position fixed
+  top 0
+  left 0
+  min-width 100%
+  min-height 100%
+
+#module
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  .container
+    background-color #fff
+
+/* ==========================================================================
+  MOVIES
+========================================================================== */
+
+#movies
+  width 100%
+  overflow hidden
+  position relative
+
+#movies-list
+  position relative
+
+.btn-nav
+  position absolute
+  top 50%
+  transform translateY(-50px)
+  z-index 10
+
+#btn-prev
+  left 0
+
+#btn-next
+  right 0
+
+.movie-item
+  width 150px
+  float: left
+  padding 0 6px 32px 6px
+  +above(768px)
+    width 240px
+  +above(992px)
+    width 188px
+  +above(1200px)
+    width 228px
+  .movie-infos
+    padding 6px
+  .movie-container
+    border $border-color
+    box-shadow 0px 6px 12px 1px rgba(0,0,0,0.15)
+  .movie-description
+    display none
+    padding-bottom 6px
+    +above(768px)
+      display block
+  .movie-title
+    font-size 1.1em
+    font-weight 600
+    margin-bottom .5em
+  .movie-visual
+    width 100%
+
+.movie-item:not(.active)
+  display none
