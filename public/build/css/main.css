@@ -13,9 +13,10 @@ ul#movies-list li img {
   transition: 0.5s ease;
   backface-visibility: hidden;
   z-index: 1;
+  border-radius: 8px;
 }
 ul#movies-list li img:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
   z-index: 2;
 }
 h1 {
